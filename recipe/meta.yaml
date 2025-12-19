@@ -1,5 +1,5 @@
 {% set name = "py-cid" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/py_cid-{{ version }}.tar.gz
-  sha256: eb0d14f35430787b978ffb66067d70ffaa9d85ecf62c950e792293193e705a75
+  sha256: 7c15d6a83f59c3a4c7fbff793f1d4cbfc831e90355fd0e2c5cfe927c21733cc3
 
 build:
   noarch: python
@@ -39,7 +39,7 @@ test:
 
 about:
   summary: Self-describing content-addressed identifiers for distributed systems
-  home: https://github.com/ipld/py-cid  
+  home: https://github.com/ipld/py-cid
   license: MIT
   license_file: LICENSE
 
