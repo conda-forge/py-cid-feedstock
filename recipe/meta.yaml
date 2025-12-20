@@ -23,7 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - py-multibase >=1.0.0
-    - py-multicodec <1.0.0
+    - py-multicodec >=1.0.0
     - morphys >=1.0
     - py-multihash >=3.0.0
 
