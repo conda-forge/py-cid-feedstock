@@ -1,5 +1,5 @@
 {% set name = "py-cid" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/py_cid-{{ version }}.tar.gz
-  sha256: 7c15d6a83f59c3a4c7fbff793f1d4cbfc831e90355fd0e2c5cfe927c21733cc3
+  sha256: 93c62586c672353a9862f3fce13c9848ea39a00378e0980e2f0eed91631f3d28
 
 build:
   noarch: python
