@@ -1,13 +1,13 @@
 {% set name = "py-cid" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/py_cid-{{ version }}.tar.gz
-  sha256: 93c62586c672353a9862f3fce13c9848ea39a00378e0980e2f0eed91631f3d28
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/py_cid-{{ version }}.tar.gz
+  sha256: b03edc055a964ef7c2a982cf24b694b80e55eb2fbe2c65085e7493c37691bdf6
 
 build:
   noarch: python
@@ -22,10 +22,10 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - py-multibase >=1.0.0
-    - py-multicodec >=1.0.0
+    - py-multibase >=2.1.0
+    - py-multicodec >=1.1.0
     - morphys >=1.0
-    - py-multihash >=3.0.0
+    - py-multihash >=4.0.0
 
 test:
   imports:
